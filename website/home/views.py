@@ -15,7 +15,7 @@ def search_view(request):
     '''
     Function to manage search form queries and display to user
     '''
-    if request.method == "POST":
+    if request.method == 'POST':
         form = SearchForm(request.POST)
 
         if form.is_valid():
